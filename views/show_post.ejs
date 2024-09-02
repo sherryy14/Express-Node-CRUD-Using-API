@@ -1,0 +1,27 @@
+<%- include("includes/header.ejs") %>
+
+<body>
+    <div class="container">
+        <h1 class="text-center my-3">Quora Post</h1>
+        <a href="/posts" class="btn btn-primary mb-3">Back</a>
+        <div class="row">
+
+                <div class="col-lg-3">
+                    <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                        <div class="card-header">
+                            <%= post.username %>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><%= post.title %></h5>
+                            <p class="card-text">
+                                <%= post.content %>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+              
+        </div>
+    </div>
+</body>
+
+</html>
